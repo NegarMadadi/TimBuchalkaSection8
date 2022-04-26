@@ -1,4 +1,4 @@
-package org.example.arrays.MinimumElementChallengee;
+package org.example.arrays.minimumElementChallengee;
 
 
 //Write a method called readInteger() that has no parameters and returns an int.
@@ -37,7 +37,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        MinimumElementChallenge minimumElementChallenge = new MinimumElementChallenge();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -45,10 +44,10 @@ public class Main {
         int count = scanner.nextInt();
         scanner.nextLine();
 
-        int[] returnedArray = minimumElementChallenge.readIntegers(count);
+        int[] returnedArray = MinimumElementChallenge.readIntegers(count);
         System.out.println(Arrays.toString(returnedArray));
 
-        int returnedMin = minimumElementChallenge.findMin(returnedArray);
+        int returnedMin = MinimumElementChallenge.findMin(returnedArray);
         System.out.println(returnedMin);
     }
 }
