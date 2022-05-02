@@ -43,7 +43,6 @@ public class Main {
         }
     }
 
-
     public static void printInstructions() {
         System.out.println("/nPress");
         System.out.println("\t 0 - To print choice options.");
@@ -59,23 +58,22 @@ public class Main {
     public static void addItem() {
         System.out.println("Please enter the grocery item : ");
         groceryList.addGroceryItem(scanner.nextLine());
+
     }
 
     public static void modifyItem() {
         System.out.println("current item number: ");
-        String itemNo = scanner.nextLine();
+        int itemNo = scanner.nextInt();
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo, newItem);
+        groceryList.modifyGroceryItem(itemNo - 1, newItem);
     }
-
 
     public static void removeItem() {
         System.out.println("Enter item number: ");
         int itemNo = scanner.nextInt();
         groceryList.removeGroceryItem(itemNo - 1);
     }
-
 
     public static void searchForItem() {
         System.out.println("Item to search for: ");
@@ -85,20 +83,8 @@ public class Main {
         } else {
             System.out.println(searchItem + " is not in the shopping list");
         }
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

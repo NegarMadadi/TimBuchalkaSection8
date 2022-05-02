@@ -1,18 +1,14 @@
+
 package org.example.listsAndArrayList;
 
 import java.util.ArrayList;
 
 public class GroceryList {
 
-    private int[] myNumbers = new int[50];
-
     private ArrayList<String> groceryList = new ArrayList<String>();
 
     public void addGroceryItem(String newItem) {
-        int position = findItem(newItem);
-        if (position >= 0) {
-            modifyGroceryItem(position, newItem);
-        }
+        groceryList.add(newItem);
     }
 
     public void printGroceryList() {
@@ -22,33 +18,24 @@ public class GroceryList {
         }
     }
 
-    public void modifyGroceryItem(String currentItem, String newItem) {
-        int position = findItem(currentItem);
-        if (position >= 0) {
-            modifyGroceryItem(position, newItem);
-        }
-    }
-
-    private void modifyGroceryItem(int position, String newItem) {
+    public void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("grocery item " + (position + 1) + " has been modified.");
     }
 
 
-    public void removeGroceryItem(String item) {
-        int position = findItem(item);
+    public void removeGroceryItem(int position) {
+        String theItem = groceryList.get(position);
+        groceryList.remove(position);
+    }
+
+    public String findItem(String searchItem) {
+        int position = groceryList.indexOf(searchItem);
         if (position >= 0) {
-            removeGroceryItem(position);
+            return groceryList.get(position);
         }
-
-        private void removeGroceryItem ( int position){
-            groceryList.remove(position);
-        }
-
-
-        public int findItem(String searchItem){
-            return groceryList.indexOf(searchItem);
-        }
-
+        return null;
     }
 }
+
+
