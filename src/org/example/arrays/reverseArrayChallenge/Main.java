@@ -29,5 +29,4 @@ public class Main {
         ReverseArrayChallenge.reverse(array);
         System.out.println("Reversed Array = " + Arrays.toString(array));
     }
-
 }
