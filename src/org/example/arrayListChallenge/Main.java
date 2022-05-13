@@ -178,8 +178,8 @@ public class Main {
         System.out.println("\nAvailable  actions : \npress");
         System.out.println("0 _ To shutdown \n" +
                 "1 _ print contacts\n" +
-                "2 _ to ad a new contact\n" +
-                "3 _ to update an existing aan existing contact\n" +
+                "2 _ to add a new contact\n" +
+                "3 _ to update an existing contact\n" +
                 "4 _ to remove an existing contact\n" +
                 "5 _ query if an existing contact exists\n" +
                 "6 _ to print a list of available actions.");
