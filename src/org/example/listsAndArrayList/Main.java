@@ -1,3 +1,4 @@
+/*
 package org.example.listsAndArrayList;
 
 import java.util.Scanner;
@@ -66,7 +67,7 @@ public class Main {
 
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo, newItem);
+       // groceryList.modifyGroceryItem(itemNo, newItem);
     }
 
     public static void removeItem() {
@@ -75,17 +76,18 @@ public class Main {
         groceryList.removeGroceryItem(itemNo - 1);
     }
 
-    public static void searchForItem() {
-        System.out.println("Item to search for: ");
-        String searchItem = scanner.nextLine();
-        if (groceryList.onFile(searchItem)) {
-            System.out.println("Found " + searchItem + " in our grocery list");
-        } else {
-            System.out.println(searchItem + " is not in the shopping list");
-        }
-    }
+//    public static void searchForItem() {
+//        System.out.println("Item to search for: ");
+//        String searchItem = scanner.nextLine();
+//        if (groceryList.onFile(searchItem)) {
+//            System.out.println("Found " + searchItem + " in our grocery list");
+//        } else {
+//            System.out.println(searchItem + " is not in the shopping list");
+//        }
+//    }
 }
 
+/*
 
 
 
@@ -108,3 +110,4 @@ public class Main {
 
 
 
+*/
