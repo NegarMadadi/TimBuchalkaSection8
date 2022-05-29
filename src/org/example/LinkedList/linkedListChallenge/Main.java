@@ -98,6 +98,7 @@ public class Main {
                             listIterator.previous();
                         }
                         forward = false;
+                        
                     }
                     if (listIterator.hasPrevious()) {
                         System.out.println("Now playing " + listIterator.previous().toString());
